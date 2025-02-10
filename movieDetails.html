@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <link rel="icon" href="assets/images/Logo_transparent.png" type="image/png">
+    <title>Movie Dose</title>
+</head>
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar bg-transparent">
+        <div class="container-fluid d-flex align-items-center">
+            <img src="assets/images/Logo_transparent.png" alt="Logo" class="logo">
+            <a class="navbar-brand ms-2" href="index.html">Movie Dose</a>
+            <form class="d-flex ms-auto" role="search" id="search" action="searchResults.html" method="get">
+                <input class="form-control me-2" id="search-input" type="search" placeholder="Search" aria-label="Search" name="query">
+                <button class="btn" type="submit">Search</button>
+            </form>   
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Movie Details -->
+    <div class="movie-details-container">
+        <div class="movie-info">
+            <img id="movie-poster" src="" alt="Movie Poster">
+            <div class="movie-text">
+                <h2 id="movie-title"></h2>
+                <p id="movie-plot"></p>
+                <p><strong>Rating:</strong> <span id="movie-rating"></span></p>
+                <p><strong>Release Date:</strong> <span id="movie-release"></span></p>
+                <button id="watchlist-btn">Add to Watchlist</button>
+                <h3>Cast</h3>
+                <ul id="movie-cast" class="cast-list"></ul>
+            </div>
+        </div>
+    </div>
+    <!-- Movie Details End -->
+    
+
+        <!-- Foooter -->
+        <footer>
+            <p>&copy; 2025 Movie Dose. All rights reserved.</p>
+        </footer>
+        <!-- Footer End -->
+    <script src="assets/moviedetails.js"></script>
+</body>
+</html>

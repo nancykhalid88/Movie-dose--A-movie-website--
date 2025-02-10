@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <link rel="icon" href="assets/images/Logo_transparent.png" type="image/png">
+    <title>Movie Dose</title>
+</head>
+<body>
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar bg-transparent">
+        <div class="container-fluid d-flex align-items-center">
+            <img src="assets/images/Logo_transparent.png" alt="Logo" class="logo">
+            <a class="navbar-brand ms-2" href="index.html">Movie Dose</a>
+            <form class="d-flex ms-auto" role="search" id="search" action="searchResults.html" method="get">
+                <input class="form-control me-2" id="search-input" type="search" placeholder="Search"  name="query">
+                <button class="btn" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Image -->
+    <div class="Image-container">
+        <img src="https://a.ltrbxd.com/resized/sm/upload/l3/72/mx/b8/vqToPEywI1QzUNd5bJceldmrWUf-1920-1920-1080-1080-crop-000000.jpg?v=cdd95a78e1" alt="Website Image">
+        <div class="overlay-text">Rate, Discover, and Share Your Movie Experience!</div>
+    </div>
+    <!-- Image End -->
+
+
+
+    <!-- watchlater button -->
+    <div class="watchlater-a">
+    <a type="button" class="btn btn-lg" href="watchList.html"> Your Watchlist</a>
+    </div>
+    <!-- watchlater button end -->
+
+
+    <!--Movie lists -->
+    <section class="Trending-movies">
+        <div class = "line">
+            <h4>Trending Movies</h4>
+        </div>
+        <div class="movie-wrapper">
+            <button class="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="movie-container" id="trending-movies"></div>
+            <button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+
+    <section class="upcoming-movies">
+        <div class = "line">
+            <h4>Upcoming Movies</h4>
+        </div>
+        <div class="movie-wrapper">
+            <button class="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="movie-container" id="upcoming-movies"></div>
+            <button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <section class="top-rated-movies">
+        <div class = "line">
+            <h4>Top Rated Movies</h4>
+        </div>
+        <div class="movie-wrapper">
+            <button class="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="movie-container" id="top-rated-movies"></div>
+            <button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <section class="featured-movies">
+        <div class = "line">
+            <h4>Featured Movies</h4>
+        </div>
+        <div class="movie-wrapper">
+            <button class="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="movie-container" id="featured-movies"></div>
+            <button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+    <!-- Movie lists End -->
+    
+
+    <!-- Foooter -->
+    <footer>
+        <p>&copy; 2025 Movie Dose. All rights reserved.</p>
+    </footer>
+    <!-- Footer End -->
+    <script src="assets/script.js"></script>
+</body>
+</html>
